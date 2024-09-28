@@ -1,11 +1,13 @@
 import React from 'react'
+import logo from '../../asset/images/veriflux.png'
 import './navbar.css';
 
 const Navbar = () => {
   return (
-    <div>
+    <nav className="navbar">
+        <div className="logo"> {logo} </div>
 
-    </div>
+    </nav>
   )
 }
 
