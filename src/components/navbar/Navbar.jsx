@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../asset/images/veriflux.png'
 import './navbar.css';
 
@@ -9,11 +10,11 @@ const Navbar = () => {
         <img src={logo} alt="veriflux image" />
         </div>
         <ul className="nav-links">
-          <li><a href="/home">Home</a></li>
-          <li><a href="/issue-certificate">Issue Certificate</a></li>
-          <li><a href="/verify-certificate">Verify Certificate</a></li>
-          <li><a href="/about-us">About Us</a></li>
-          <li><a href="/contact-us">Contact us</a></li>
+          <li><NavLink to="/home" activeClassName="active">Home</NavLink></li>
+          <li><NavLink to="/issue-certificate" activeClassName="active">Issue Certificate</NavLink></li>
+          <li><NavLink to="/verify-certificate" activeClassName="active">Verify Certificate</NavLink></li>
+          <li><NavLink to="/about-us" activeClassName="active">About Us</NavLink></li>
+          <li><NavLink to="/contact-us" activeClassName="active">Contact us</NavLink></li>
         </ul>
         <div className="nav-buttons">
         <button className="login">Login</button>
